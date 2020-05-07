@@ -231,4 +231,8 @@ businesses.forEach((business) => {
 });
 
 // Array to contain all the big spenders
-const bigSpenders = businesses.filter((business) => {});
+const bigSpenders = businesses.filter((business) => {
+	return business.orders.find((number) => number > 9000);
+});
+
+console.log(bigSpenders);
